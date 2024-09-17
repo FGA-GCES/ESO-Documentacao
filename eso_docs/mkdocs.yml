@@ -1,0 +1,4 @@
+site_name: ESO docs
+
+theme:
+  name: material
