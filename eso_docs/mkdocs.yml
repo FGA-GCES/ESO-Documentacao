@@ -2,3 +2,15 @@ site_name: ESO docs
 
 theme:
   name: material
+
+nav:
+  - Setup:
+    - Pre-Requisitos: ./1-Setup/1-Pre_requisitos.md
+    - Configurar-Kubernetes: ./1-Setup/2-Configurar_Kubernetes.md
+    - Configurar-ESO: ./1-Setup/3-Configurar_ESO.md
+  - Conectando:
+    - Conectar ESO: ./2-Conectando/Local.md
+  - Links:
+    - Links Importantes: ./3-Links/Links.md
+  - Common_issues:
+    - Problema Específico Debian: ./4-Common_issues/Make_issue.md
