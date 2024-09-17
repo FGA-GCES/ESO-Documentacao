@@ -1,4 +1,5 @@
 site_name: ESO docs
+site_url: https://eso-docs.github.io
 
 theme:
   name: material
