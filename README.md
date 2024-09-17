@@ -70,6 +70,5 @@ pip install mkdocs-material
 4. Executar a doc no localhost:8000:
 
 ```bash
-cd eso_docs
 mkdocs serve
 ```
