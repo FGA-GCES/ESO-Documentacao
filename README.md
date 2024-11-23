@@ -51,20 +51,19 @@ A documentação foi desenvolvida usando a ferramenta mkdocs. Para visualiza-la 
 1. Criar ambiente virtual
 
 ```bash
-python3 -m venv docs
+python3 -m venv venv
 ```
 
 2. Ativar ambiente virtual
 
 ```bash
-source docs/bin/activate
+source venv/bin/activate
 ```
 
 3. Instalar as dependencias
 
 ```bash
-pip install mkdocs
-pip install mkdocs-material
+pip install mkdocs mkdocs-material
 ```
 
 4. Executar a doc no localhost:8000:
