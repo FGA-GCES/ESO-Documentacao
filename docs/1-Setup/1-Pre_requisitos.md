@@ -339,20 +339,49 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io</code></pre>
 
   <h3>Como Instalar o ctlptl</h3>
 
-  <details>
-    <summary>Instalação no Linux</summary>
-    <h3>1. Baixar o binário do ctlptl:</h3>
-    <pre><code>curl -s https://api.github.com/repos/tilt-dev/ctlptl/releases/latest \
-| grep "browser_download_url.*linux_amd64.tar.gz" \
-| cut -d '"' -f 4 \
-| wget -i -</code></pre>
-    <h3>2. Extrair o arquivo baixado:</h3>
-    <pre><code>tar xvf ctlptl*_linux_amd64.tar.gz</code></pre>
-    <h3>3. Mover o binário para <code>/usr/local/bin</code>:</h3>
-    <pre><code>sudo mv ctlptl /usr/local/bin/</code></pre>
-    <h3>4. Verificar a instalação do ctlptl:</h3>
-    <pre><code>ctlptl version</code></pre>
-  </details>
+ <details>
+  <summary>Instalação no Linux</summary>
+  <h3>1. Instalar o ctlptl via Go:</h3>
+  <p>Certifique-se de que o Go está instalado no seu sistema. Se não estiver, siga as instruções no <a href="https://go.dev/doc/install">site oficial do Go</a>.</p>
+  <pre><code>
+go install github.com/tilt-dev/ctlptl/cmd/ctlptl@latest
+  </code></pre>
+
+  <h3>2. Adicionar o diretório <code>$GOPATH/bin</code> ao PATH (se necessário):</h3>
+  <pre><code>
+export PATH=$PATH:$(go env GOPATH)/bin
+  </code></pre>
+  
+  <h3>3. Verificar a instalação do ctlptl:</h3>
+  <pre><code>
+ctlptl version
+  </code></pre>
+</details>
+
+<details>
+  <summary>Instalação Manual</summary>
+  <h3>1. Baixar o binário do ctlptl:</h3>
+  <p>Substitua <code>vX.Y.Z</code> pela versão desejada. Consulte a <a href="https://github.com/tilt-dev/ctlptl/releases">página de releases</a> para verificar a versão mais recente.</p>
+  <pre><code>
+wget https://github.com/tilt-dev/ctlptl/releases/download/vX.Y.Z/ctlptl.vX.Y.Z.linux.x86_64.tar.gz
+  </code></pre>
+  
+  <h3>2. Extrair o arquivo baixado:</h3>
+  <pre><code>
+tar -xzf ctlptl.vX.Y.Z.linux.x86_64.tar.gz
+  </code></pre>
+  
+  <h3>3. Mover o binário para <code>/usr/local/bin</code>:</h3>
+  <pre><code>
+sudo mv ctlptl /usr/local/bin/
+sudo chmod +x /usr/local/bin/ctlptl
+  </code></pre>
+  
+  <h3>4. Verificar a instalação do ctlptl:</h3>
+  <pre><code>
+ctlptl version
+  </code></pre>
+</details>
 
   <details>
     <summary>Instalação no macOS</summary>
