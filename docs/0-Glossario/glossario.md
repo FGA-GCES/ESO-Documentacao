@@ -26,13 +26,35 @@ Está organizado em ordem alfabética!
 ---
 
 ### **Helm**
+- **O que é?**  
+  Um gerenciador de pacotes para Kubernetes que facilita a implantação e o gerenciamento de aplicações usando templates chamados "charts".
+- **Para que serve?**  
+  Simplifica a configuração, instalação e atualização de aplicativos no Kubernetes.
+- **Links úteis:**  
+  - [Documentação oficial](https://helm.sh/docs/)
+  - [GitHub do projeto](https://github.com/helm/helm)
 
 ---
-### **HOA**
+### **HPA**
+- **O que é?**  
+ Horizontal Pod Autoscaler (HPA)
+- **Para que serve?**  
+  É usado para controlar a quantidade de Pods que há em um Deployment. Por exemplo, se o uso de CPU estiver muito alto, o HPA aumentaria a quantidade de pods. Também é possível utilizar o Vertical Pod Autoscaler (VPA), que aumentaria a quantidade de recursos de cada pod em vez de aumentar a quantidade de Pod.
+  
+  Fonte:  [Leo Michalski](https://github.com/leomichalski/kubernetes-para-devs/blob/main/README.md)
 
 ---
 
 ### **Ingress**
+- **O que é?**  
+  Em um cluster Kubernetes no qual todas as requisições chegam no mesmo IP e na mesma porta, os Ingresses são responsáveis por direcionar (de acordo com o DNS e o endpoint de cada requisição) essas requisições para os Services adequados. Também pode ser usado para outras finalidades.
+  
+   Fonte:  [Leo Michalski](https://github.com/leomichalski/kubernetes-para-devs/blob/main/README.md)
+
+- **Para que serve?**  
+  Oferece um ponto de entrada único para rotear tráfego para serviços internos.
+- **Links úteis:**  
+  - [Sobre Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
 ---
 
@@ -95,7 +117,7 @@ Está organizado em ordem alfabética!
 
 </figure>
 
-
+</center>
 
 ---
 

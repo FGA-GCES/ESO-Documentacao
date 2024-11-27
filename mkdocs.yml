@@ -5,6 +5,7 @@ theme:
   name: material
 
 nav:
+  - Glossário:  ./0-Glossario/glossario.md
   - Setup:
     - Pre-Requisitos: ./1-Setup/1-Pre_requisitos.md
     - Configurar-Kubernetes: ./1-Setup/2-Configurar_Kubernetes.md
