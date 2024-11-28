@@ -89,22 +89,23 @@ Mais opções de instalação em <https://helm.sh/docs/intro/install/>
 
 ## Configuração do Kind
 
-### Clonar este repositório
+### Clonar este repositório e acessá-lo
 
 ```bash
 git clone https://github.com/leomichalski/kubernetes-para-devs/tree/main
+cd kubernetes-para-devs
 ```
 
 ### Navegar até a pasta principal do repositório
 
 ```bash
-cd GCES-ESO-DOC
+cd setup
 ```
 
 ### Começar cluster Kubernetes com Kind
 
 ```bash
-kind create cluster --config config/kind_config.yaml
+kind create cluster --config kind_config.yaml
 ```
 
 ### Salver arquivo kubeconfig para poder usar o kubectl
