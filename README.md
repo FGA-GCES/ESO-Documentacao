@@ -12,7 +12,7 @@ A documentação está organizada para fornecer uma base sólida, garantindo que
 
 É uma linguagem de programação criada pelo Google, muito utilizada para desenvolvimento backend, de microserviços, aplicativos CLI, entre outros.
 
-O Go é utilizado tanto no Kubernetes, quanto no ESO, as duas principais tecnologias envolvidas no trabalho.
+O Go é necessário no ESO para compilar, executar e contribuir com o código-fonte do projeto.
 
 ### Kubernetes
 
@@ -22,25 +22,27 @@ Com o Kubernetes é possível orquestrar de forma mais fácil múltiplos contêi
 
 ### External Secrets Operator (ESO)
 
-O ESO, é  uma ferramenta que integra segredos (variáveis sensíveis) de provedores externos, como AWS, Google Cloud, entre outros, com um ambiente kubertenes.
+O ESO é um operador Kubernetes que tem como função integrar secrets de sistemas externos, como o AWS Secrets Manager, HashiCorp Vault, etc. 
 
-Com ele, é possível, pegar senhas salvas em um ambiente AWS, por exemplo, e subir para um contêiner em um cluster Kubernetes.
+O objetivo do ESO é sincronizar secrets sensíveis de APIs externas com o Kubernetes, provendo uma maneira mais fácil e segura de lidar com os eles.
+
+Imagine que você esteja lidando com dados sensíveis como um acesso ao banco de dados que esteja armazenado em um sistema externo. Com o ESO, esses dados são disponibilizados no Kubernetes como secrets, podendo ser consumidos pela aplicação. Além disso, caso as credenciais sejam atualizadas no AWS Secrets Manager, o ESO sincroniza as mudanças automaticamente com o Kubernetes.
 
 ## Estrutura do Repositório
 
 As pastas deste repositório foram organizadas de forma a facilitar o processo de configuração e uso do External Secrets Operator (ESO), permitindo que você siga os passos necessários de maneira sequencial e eficiente. A estrutura está dividida da seguinte forma:
 
 Setup: Contém os arquivos e instruções para a configuração inicial, incluindo a instalação do Kubernetes, ESO e demais pré-requisitos.
-[SETUP](https://github.com/frmiza/GCES-ESO-Doc/tree/docs/eso_docs/docs/1-Setup)
+[SETUP](https://github.com/FGA-GCES/ESO-Documentacao/tree/main/docs/1-Setup)
 
-Conectando: Orienta sobre como integrar o ESO ao Kubernetes e outras plataformas, incluindo como conectar com clusters kubernets locais ou por meio de ferramentas de computação em nuvem como a AWS, Google cloud e Azure
-[CONECTANDO](https://github.com/frmiza/GCES-ESO-Doc/tree/docs/eso_docs/docs/2-Conectando)
+Conectando: Orienta sobre como integrar o ESO ao Kubernetes e outras plataformas, incluindo como conectar com clusters kubernetes locais ou por meio de ferramentas de computação em nuvem como a AWS, Google cloud e Azure
+[CONECTANDO](https://github.com/FGA-GCES/ESO-Documentacao/tree/main/docs/2-Conectando)
 
 Links Externos: Uma coleção de recursos externos úteis, como artigos, fóruns e documentações oficiais, que podem auxiliar durante o desenvolvimento.
-[LINKS](https://github.com/frmiza/GCES-ESO-Doc/tree/docs/eso_docs/docs/3-Links)
+[LINKS](https://github.com/FGA-GCES/ESO-Documentacao/tree/main/docs/3-Links)
 
 Seção com resolução de problemas encontrados durante o setup do projeto:
-[COMMON_ISSUES](https://github.com/frmiza/GCES-ESO-Doc/tree/97a27e5594df9a12945dda4746d4dabacd47b30f/eso_docs/docs/4-Common_issues)
+[COMMON_ISSUES](https://github.com/FGA-GCES/ESO-Documentacao/tree/main/docs/4-Common_issues)
 
 ## Executar a documentação localmente
 
