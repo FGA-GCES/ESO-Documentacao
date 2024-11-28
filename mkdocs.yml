@@ -4,6 +4,13 @@ site_url: https://eso-docs.github.io/ESO-Documentacao
 theme:
   name: material
 
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+
 nav:
   - Glossário:  ./0-Glossario/glossario.md
   - Setup:
