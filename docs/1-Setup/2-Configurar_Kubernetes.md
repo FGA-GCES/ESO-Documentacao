@@ -92,11 +92,11 @@ Mais opções de instalação em <https://helm.sh/docs/intro/install/>
 ### Clonar este repositório e acessá-lo
 
 ```bash
-git clone https://github.com/leomichalski/kubernetes-para-devs/tree/main
+git clone https://github.com/leomichalski/kubernetes-para-devs.git
 cd kubernetes-para-devs
 ```
 
-### Navegar até a pasta principal do repositório
+### Navegar até a pasta setup do repositório
 
 ```bash
 cd setup
