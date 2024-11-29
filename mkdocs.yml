@@ -11,6 +11,7 @@ nav:
     - Configurar-ESO: ./1-Setup/3-Configurar_ESO.md
   - Conectando:
     - Conectar ESO: ./2-Conectando/Local.md
+    - ESO e Vault: ./2-Conectando/ESO-Vault.md
   - Links:
     - Links Importantes: ./3-Links/Links.md
   - Common_issues:
