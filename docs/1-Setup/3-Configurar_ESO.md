@@ -1,5 +1,7 @@
 # Configurar o External Secrets Operator
 
+Aqui será feita a configuração e utilização do ESO. Para conseguir acompanhar, é preciso ter seguido os passos de configuração inicial dos [pré requisitos](https://github.com/FGA-GCES/ESO-Documentacao/blob/main/docs/1-Setup/1-Pre_requisitos.md).
+
 ## Clonar o repositório
 
 ```bash

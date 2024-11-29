@@ -4,7 +4,15 @@ site_url: https://eso-docs.github.io/ESO-Documentacao
 theme:
   name: material
 
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+
 nav:
+  - Glossário:  ./0-Glossario/glossario.md
   - Setup:
     - Pre-Requisitos: ./1-Setup/1-Pre_requisitos.md
     - Configurar-Kubernetes: ./1-Setup/2-Configurar_Kubernetes.md
@@ -16,3 +24,4 @@ nav:
     - Links Importantes: ./3-Links/Links.md
   - Common_issues:
     - Problema Específico Debian: ./4-Common_issues/Make_issue.md
+    - Problemas ao conectar o ESO: ./4-Common_issues/make-docker_issue.md
