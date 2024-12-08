@@ -17,6 +17,12 @@ nodes:
   - role: worker
 ```
 
+Salve a configuração acima em um arquivo e execute o comando abaixo:
+
+```sh
+kind create cluster --config <arquivo>
+```
+
 ## Adicionando Vault ao cluster
 
 Podemos utilizar o Helm para instalar o Vault no cluster.
@@ -104,6 +110,12 @@ spec:
           key: "token"               # Chave do token no secret
 ```
 
+Para criar o recurso, salve a configuração em um arquivo e execute.
+
+```sh
+kubectl apply -f <arquivo>
+```
+
 ## Criando um ExternalSecret
 
 O ExternalSecret é responsável por criar a secret no cluster Kubernetes com o segredo do Vault.
@@ -126,6 +138,12 @@ spec:
       remoteRef:
         key: kv/tutorial
         property: segredo1
+```
+
+Para criar o recurso, salve a configuração em um arquivo e execute.
+
+```sh
+kubectl apply -f <arquivo>
 ```
 
 Após a criação do ExternalSecret, a secret pode ser verificada utilizando o comando:
