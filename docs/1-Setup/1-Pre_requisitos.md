@@ -1,3 +1,7 @@
+## Qual o objetivo do External Secrets Operator ?
+
+O objetivo do External Secrets Operator (ESO) é sincronizar chaves secretas de APIs externas com o Kubernetes. O ESO é uma coleção de recursos personalizados da API - ExternalSecret, SecretStore e ClusterSecretStore - que fornecem uma abstração amigável para o usuário da API externa, armazenando e gerenciando o ciclo de vida das chaves para você.
+
 # Pré-requisitos
 
 Para colaborar com o projeto [External Secrets Operator (ESO)](https://external-secrets.io/latest/), é necessário instalar algumas ferramentas no computador. Neste guia, será explicado o que é cada ferramenta, por que é necessária, a versão recomendada e como instalá-la no sistema operacional correspondente.
