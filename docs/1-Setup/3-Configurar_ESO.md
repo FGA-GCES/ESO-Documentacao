@@ -11,6 +11,7 @@ cd external-secrets
 
 ## Instalar helm-unittest
 
+Helm Unittest é uma ferramenta que busca melhorar a qualidade e confiabilidade de suas aplicações em ambientes Kubernetes.
 Instalar helm-unittest para poder realizar testes automatizados no ESO.
 
 ```bash
